@@ -7,6 +7,6 @@ import "fmt"
 //程序主入口 main函数
 func main() {
 	//在console 打印 lest go！！！
-	fmt.Println("人生断苦 , Let’s Go!!!")
+	fmt.Println("人生短苦 , Let’s Go!!!")
 	//fmt.Printf("Hello %s ", "Ding")
 }
