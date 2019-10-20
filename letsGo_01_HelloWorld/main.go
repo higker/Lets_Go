@@ -8,5 +8,5 @@ import "fmt"
 func main() {
 	//在console 打印 lest go！！！
 	fmt.Println("人生断苦 , Let’s Go!!!")
-
+	fmt.Printf("Hello %s ", "Ding")
 }
