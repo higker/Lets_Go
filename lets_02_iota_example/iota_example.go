@@ -24,7 +24,7 @@ const (
 	v1 = 2
 	v2 = 3
 	v3 = iota
-	v4
+	v4 = iota
 	v5
 	v6 = iota
 	v7
