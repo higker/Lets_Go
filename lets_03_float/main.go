@@ -7,7 +7,7 @@ import (
 
 //go语言的 （float）浮点数
 func main() {
-	//在go语言中的2小数默认类型就是float64类型
+	//在go语言中的小数默认类型就是float64类型
 	//如果需要使用float32就使用显示声明
 	fmt.Printf("float64最大值%v\n", math.MaxFloat64)
 	fmt.Printf("float32最小值%v\n", math.MaxFloat32)
