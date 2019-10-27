@@ -13,6 +13,8 @@ func main() {
 	fmt.Printf("float32最小值%v\n", math.MaxFloat32)
 	f1 := float32(0.32)
 	fmt.Printf("f1 value = %v 类型是:%T", f1, f1)
+	//f2 = f1 在go语言中的float32不能直接赋值给float64
+
 }
 
 // float64最大值1.7976931348623157e+308
