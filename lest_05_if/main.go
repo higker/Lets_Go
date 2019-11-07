@@ -7,6 +7,7 @@ var (
 	result = 0
 )
 
+//go 里面的 条件 语句 if example
 func main() {
 
 	if age > 18 {
