@@ -7,9 +7,9 @@
 
 <p align="center">这是一个<code>Go</code>语言零基础 学习笔记的代码仓库📒</p>
 <p align="center">
-    🤩 <a href="https://github.com/BinScholl/ApeTranslation" target="_blank">仓库地址</a> | 
-    🍻<a href="https://github.com/BinScholl/ApeTranslation/releases" target="_blank">代码下载 </a> | 
-    👷 <a href="https://wpa.qq.com/msgrd?v=3&uin=2420498526&site=qq&menu=yes" target="_blank">联系作者</a> 
+    🤩 <a href="https://github.com/BinScholl/Lets_Go" target="_blank">仓库地址</a> | 
+    🍻<a href="https://github.com/BinScholl/Lets_Go/releases" target="_blank">代码下载 </a> | 
+    👨‍💻‍ <a href="https://wpa.qq.com/msgrd?v=3&uin=2420498526&site=qq&menu=yes" target="_blank">联系作者</a> 
 </p>
 
 ### 🔝置顶通知❣️
