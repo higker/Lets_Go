@@ -40,7 +40,10 @@
 ### 如果对你有帮助可以赞赏一下
 
 
-PayPal [to PayPal](https://www.paypal.me/dingshuo)
+💰PayPal [to PayPal](https://www.paypal.me/dingshuo)
 
-WeChat 
+😲WeChat 👇
+
+</br>
+
 ![IMG_1126(20200104-142006) (1).jpg](https://raw.githubusercontent.com/BinScholl/Lets_Go/master/IMG_1126(20200104-142006)%20(1).jpg)
