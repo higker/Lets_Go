@@ -1,7 +1,7 @@
 
 
 <p align="center">
-    <a href="https://github.com/BinScholl/"><img src="https://i.loli.net/2020/01/04/fkp1Jy9oehH7AuU.jpg" width="350"/></a>
+    <a href="https://github.com/BinScholl/"><img src="https://i.loli.net/2020/01/04/fkp1Jy9oehH7AuU.jpg" width="320"/></a>
     <h1 align="center">Let's Go 📚</h1>
 </p>
 
@@ -29,7 +29,7 @@
 
 ### 📚目录树🌲
 
-
+1. 待更新中.....
 
 
 
