@@ -2,7 +2,7 @@
  * @Author: BinScholl
  * @Date: 2020-01-03 19:58:26
  * @LastEditors  : BinScholl
- * @LastEditTime : 2020-01-05 13:37:10
+ * @LastEditTime : 2020-01-05 13:52:12
  * @Description: go语言中goto关键字的使用
  * @Github: https://github.com/BinScholl
  */
@@ -13,7 +13,6 @@ import "fmt"
 
 func main() {
 	gotoDemo3()
-
 }
 
 //通常写法1
@@ -65,8 +64,8 @@ func gotoDemo2() {
 		}
 	}
 	return
-	// 标签
-breakTag:
+
+breakTag: // 标签名称 这个就是定义的label name 方便goto找到这个标签代码块去执行!
 	fmt.Println("for循环都跳出")
 
 	fmt.Println("我是goto3我还会执行吗?")
