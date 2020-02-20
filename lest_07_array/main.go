@@ -86,4 +86,56 @@ func main() {
 	array3 := [2]int8{1, 2}
 	array4 := [2]int8{1, 2}
 	fmt.Println(array3 == array4)
+
+	//数组是值类型的
+	var b1 = [3]int8{1, 2, 3} //注意这里的等于号 ”=“ 如果在声明的时候就给数组赋值 要就加一个=
+	var b2 [3]int8
+	b2 = b1             //这里go语言会在内存开辟给空间 拷贝一份b1的值 给b2
+	b2[1] = 100         //修改b2的下标为1的元素 值为100
+	fmt.Println(b1, b2) //[1 2 3] [1 100 3]
+
 }
+
+/**
+代码运行结果
+
+[Running] go run "d:\Go_workspace\src\Lets_Go\lest_07_array\main.go"
+小米0
+小米1
+小米2
+ages = [	11	16	18	19	22	]
+[true false true]
+3
+[1 2 3 0 0]
+[true false false]
+方法二
+n[ 0 ] =  [1 2]
+n[ 0 ] [ 0 ]=  1
+n[ 0 ] [ 1 ]=  2
+n[ 1 ] =  [2 2]
+n[ 1 ] [ 0 ]=  2
+n[ 1 ] [ 1 ]=  2
+n[ 2 ] =  [3 2]
+n[ 2 ] [ 0 ]=  3
+n[ 2 ] [ 1 ]=  2
+方法二
+n[ 0 ] =  [1 2]
+n[ 0 ] [ 0 ]=  1
+n[ 0 ] [ 1 ]=  2
+n[ 1 ] =  [2 2]
+n[ 1 ] [ 0 ]=  2
+n[ 1 ] [ 1 ]=  2
+n[ 2 ] =  [3 2]
+n[ 2 ] [ 0 ]=  3
+n[ 2 ] [ 1 ]=  2
+[[1 2] [2 2] [3 2]]
+1
+2
+
+[0 1 0 0 0 0 0 0 0 9]
+array1 : [3]int16 | array2 : [2]int16
+true
+[1 2 3] [1 100 3]
+
+[Done] exited with code=0 in 3.292 seconds
+*/
