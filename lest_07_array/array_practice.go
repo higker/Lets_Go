@@ -45,10 +45,10 @@ func subscript(arr [5]int, sum int) {
 		}
 	}
 }
-githu
+
 //找出2个元素和相加为n的 元素下标
 func subscriptOf(arr [5]int, sum int) {
-	fmt.Println("普通循环实现:")
+	fmt.Println("普通循环实现2:")
 	//外循环从第一个元素开始
 	for i := 0; i < len(arr); i++ {
 		//内循环从外循环的后面一个开始  这样是因为防止自己和自己比较
