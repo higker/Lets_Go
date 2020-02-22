@@ -30,6 +30,11 @@ func main() {
 	//person = name[:1] person: [马化腾] len(person)= 1 cap(person)= 2
 	person = name[:]
 	fmt.Println("person:", person, "len(person)=", len(person), "cap(person)=", cap(person))
+
+	var city = []string{"上海", "深圳", "北京", "天津", "重庆"}
+	fmt.Println("city =", city)
+	city = city[1:4]
+	fmt.Println("city = ", city, "city的len是", len(city), "city的cap是", cap(city))
 }
 
 /*
