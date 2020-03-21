@@ -54,7 +54,7 @@ func main() {
 	arr3 := arr[1:len(arr)]
 	fmt.Println("arr3:", arr3)
 	s3 := arr[:4]  //从第一个切割到第4
-	s5 := arr[1:3] //从第3个切割到4
+	s5 := arr[1:3] //从第1个切割到4
 	s6 := arr[3:]  //从第3个切割到最后
 	s7 := arr[:]   //从第一个切割到最后
 	fmt.Println(s3, s6, s7)
