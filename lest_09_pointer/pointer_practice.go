@@ -21,4 +21,10 @@ func main() {
 	*ptrT = 999
 	fmt.Println(*ptrT)
 	fmt.Println(ptrT)
+
+	//也可以这样写
+
+	var ptr2 *int = new(int) //new 关键字不是初始化对象 而是在帮助引用类型在内存里面开辟空间并且赋零值
+	//ptr2 = 999
+	fmt.Println(*ptr2)
 }

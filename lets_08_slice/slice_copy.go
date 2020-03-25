@@ -34,6 +34,14 @@ func main() {
 	result, p := removeAsIndex(t, 0)
 	fmt.Println(result, "-->remove value is-->", p)
 	fmt.Println("cap(t)=", cap(t)) //切片是不存值的 值是由底层数组存在的 所以上面我们移除了指定的一个元素的值 只是移除了底层的数组的值 而不会影响数组的len 切片的原始的cap
+	sINT := [...]int{1, 2, 3, 4, 5}
+	fmt.Println(sINT)
+	sl1 := sINT[:]
+	fmt.Println(sl1)
+	sl2 := make([]int, len(sl1), 10)
+	fmt.Println(sl2)
+	copy(sl2, sl1)
+	fmt.Println(sl2)
 }
 
 func removeAsIndex(parm []int, index int) ([]int, int) {
