@@ -38,5 +38,10 @@ func main() {
 	//正确使用
 	var sliTow = make([]int, 5, 10)
 	fmt.Println("sliTow=", sliTow)
-	
+	//声明一个int类型的切片指针 用来存储int类型的指针
+	var ptrSli = new(*int)
+	*ptrSli = &sliTow[1]
+	fmt.Println(ptrSli)
+	//有趣的一道题
+	//https://studygolang.com/articles/13595?fr=sidebar
 }
