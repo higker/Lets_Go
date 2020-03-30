@@ -36,13 +36,30 @@ func main() {
 
 	tstr := "上海自来水来自海上"
 	rstr := []rune(tstr)
-	for i := 0; i < len(rstr); i++ {
+	//fmt.Println(string(rstr[9]))
+	endIndex := (len(rstr) - 1) //减一是因为切片的index是从0开始的
+	for i := 0; i <= len(rstr); i++ {
 		//比较方式就是 通过index 和最后一个end_index进行比较 首位比较
-		fmt.Println(string(rstr[i]))
-		for j := len(rstr); j >= i; j-- {
-			if string(rstr[i]) == string(rstr[(j-1)]) {
-				fmt.Printf("rstr[%d] = %s | rstr[%d] \n", i, string(rstr[i]), j, string(rstr[j]))
+		//fmt.Println(string(rstr[end_index]))
+		if string(rstr[i]) == string(rstr[endIndex]) {
+			fmt.Printf("rstr[%d] = %s | rstr[%d] = %s\n", i, string(rstr[i]), endIndex, string(rstr[endIndex]))
+			if i == endIndex { //这里的判断下标就是防止 运行时下标一样就说明比对完成
+				break
+			} else { //不一样就说明没有比对完成
+				endIndex--
 			}
+		} else {
+			fmt.Println("不是回文！！！")
+			break
+		}
+	}
+
+	for i, s := range tstr {
+		n := len(tstr) - 1 - i
+		if string(s) != string(tstr[n]) { //减一是因为切片下标是从0开始
+			//减i是每一次 循环的 下标移动
+			fmt.Println("不是回文")
+			break
 		}
 	}
 	//通过上面案例 实现类似于 QQ敏感词汇拦截
