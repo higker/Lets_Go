@@ -27,7 +27,7 @@ func menu() {
 	fmt.Println("2.新增学生")
 	fmt.Println("3.删除学生")
 	fmt.Println("0.退出系统")
-	fmt.Println("================================")
+	fmt.Println("=================================")
 	fmt.Println("请输入序号:")
 	fmt.Scan(&mid)
 	switch mid {
@@ -42,6 +42,8 @@ func menu() {
 		menu()
 	case 0:
 		exit()
+		menu()
+	default:
 		menu()
 	}
 }
@@ -58,7 +60,9 @@ func see() {
 //添加学生
 func add() {
 	name := ""
+	fmt.Println("--------------------------------------------------------------")
 	fmt.Println("请输入学生姓名:")
+	fmt.Println("--------------------------------------------------------------")
 	fmt.Scan(&name)
 	s := NewStudent(name)
 	students = append(students, s)
@@ -66,6 +70,7 @@ func add() {
 
 //删除学生
 func delete() {
+	flag := false
 	id := int64(-1)
 	fmt.Println("请输入要删除的学生ID:")
 	fmt.Scan(&id)
@@ -73,9 +78,17 @@ func delete() {
 		if id == students[i].id {
 			//通过切片截取 移除掉不需要的那个学生信息
 			students = append(students[:i], students[(i+1):]...)
+			fmt.Println("--------------------------------------------------------------")
 			fmt.Println("删除学生成功！")
+			fmt.Println("--------------------------------------------------------------")
+			flag = true
 			break
 		}
+	}
+	if !flag {
+		fmt.Println("--------------------------------------------------------------")
+		fmt.Println("没有这个学生信息!!")
+		fmt.Println("--------------------------------------------------------------")
 	}
 
 }
