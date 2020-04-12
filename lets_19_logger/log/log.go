@@ -72,6 +72,6 @@ func OpenWriter(f Flog) *os.File {
 //操作输出内容
 func out(f Flog, msg string, model string) {
 	file := OpenWriter(f)
-	file.WriteString(INFO + msg + "\n")
+	file.WriteString(model + msg + "\n")
 	file.Close()
 }
