@@ -6,6 +6,8 @@ import (
 	"os"
 )
 
+//go implement simple linux cat command
+//cat D:/Go_workspace/src/Lets_Go/lets_19_file_writer/cat_main.go
 func main() {
 	args := os.Args
 	//fmt.Println(args)
