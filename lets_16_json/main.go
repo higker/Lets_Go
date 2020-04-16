@@ -36,7 +36,7 @@ func main() {
 	//json反序列化
 	var s2 student
 	str := `{"Name":"宁宁","Age":18,"Class":"5班","Learning":"Golang"}`
-	json.Unmarshal([]byte(str),&s2)
+	json.Unmarshal([]byte(str), &s2)
 	//json([]byte(str), &s2) //反序列化传入指针 go里面的方法改的是副本
 	fmt.Println("s2 = ", s2)
 	//HttpServer()

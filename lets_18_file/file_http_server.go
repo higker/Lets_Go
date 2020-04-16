@@ -18,6 +18,7 @@ const (
 
 //文件http服务器测试
 func main() {
+
 	http.HandleFunc("/ks", func(w http.ResponseWriter, r *http.Request) {
 		result := make(map[string]interface{})
 		result["data"] = outFile(w)
@@ -36,7 +37,7 @@ func main() {
 		}
 		writer.Write(file)
 	})
-	fmt.Println("服务器正常启动....")
+	fmt.Println("")
 	http.ListenAndServe(":8080", nil)
 }
 
