@@ -20,12 +20,13 @@ func main() {
 	}
 	time.Sleep(5 * time.Second)
 	cancelFunc()
+	time.Sleep(2 * time.Second)
 }
 func worker(ctx context.Context, name string) {
 	for {
 		select {
 		case <-ctx.Done():
-			fmt.Println("task stop....")
+			fmt.Println(name, "task stop....")
 			return
 		default:
 			fmt.Println(name, "task running....")
