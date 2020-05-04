@@ -44,4 +44,5 @@ func main() {
 	add := funcMap["add"]
 	fmt.Println(add(1, 2))
 	fmt.Println(funcMap["sub"](4, 2))
+	fmt.Println(funcMap["mult"](2, 8))
 }
