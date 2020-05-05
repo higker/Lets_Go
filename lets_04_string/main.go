@@ -6,11 +6,11 @@ import (
 )
 
 const (
-	s      = "string"
-	c      = 'S'
-	t      = 'T'
-	r      = 'R'
-	string = `
+	s     = "string"
+	c     = 'S'
+	t     = 'T'
+	r     = 'R'
+	strMy = `
 		My name is "Ding Shuo",
 		My age is 20
 		Useing langues Chinese
@@ -22,10 +22,10 @@ func main() {
 	fmt.Println(c)
 	fmt.Println(t)
 	fmt.Println(r)
-	fmt.Println(string)
+	fmt.Println(strMy)
 
 	//字符串相关操作
-	fmt.Println("字符串长度", len(string))
+	fmt.Println("字符串长度", len(strMy))
 
 	//字符串拼接
 	name := "Go"
@@ -35,7 +35,9 @@ func main() {
 	//字符串格式化拼接 并且 格式化
 	ss1 := fmt.Sprintf("我的名字叫%s 年龄%s", name, age)
 	fmt.Println(ss1)
-
+	//join可以将一个string切片拼接起来
+	var ibyte []string = []string{"www", "ibyte", "com"}
+	fmt.Println(strings.Join(ibyte, "."))
 	url := "www.google.com"
 	result := strings.Split(url, ".")
 	fmt.Println(result)
