@@ -1,18 +1,18 @@
 package lets_36_testing
 
-import "fmt"
+import (
+	"reflect"
+)
 
 // 切割字符串
-func Sqlit(src, sep string) []string {
-	temp := make([]string, 0, 10)
-	srcTemp := []rune(src)
-	for _, v := range srcTemp {
-		t := string(v)
-		fmt.Printf("%T %T\n", sep, t)
-		if !(sep == t) {
-			temp = append(temp, string(v))
+func Sqlit(src, sep string) []rune {
+	var temp []rune
+	for _, v := range []rune(src) {
+		//fmt.Printf( "%T %T\n", sep, t)
+		if !reflect.DeepEqual(v, []rune(sep)) {
+			temp = append(temp, v)
 		}
 	}
-	fmt.Println(temp)
+	//fmt.Println(temp)
 	return temp
 }
