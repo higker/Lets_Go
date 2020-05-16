@@ -9,8 +9,8 @@ import (
 
 //学生结构体
 type student struct {
-	SId   int
-	SName string
+	SId   int    `json:"s_id"`
+	SName string `json:"s_name"`
 }
 
 //实例化学生构造函数
