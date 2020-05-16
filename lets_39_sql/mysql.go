@@ -3,7 +3,7 @@
 // Author: SDing <deen.job@qq.com>
 // Date: 2020/5/16 - 4:02 下午
 
-package lets_39_sql
+package main
 
 import (
 	"database/sql"

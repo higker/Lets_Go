@@ -3,7 +3,7 @@
 // Author: SDing <deen.job@qq.com>
 // Date: 2020/5/16 - 6:05 下午
 
-package lets_39_sql
+package main
 
 import (
 	"testing"
@@ -23,7 +23,6 @@ func TestConnectionDB(t *testing.T) {
 	for name, tt := range testDB {
 		t.Run(name, func(t *testing.T) {
 			t.Log(func() string {
-
 				if _, err := ConnectionDB(tt.dbc); err != nil {
 					return tt.dbc.IPAddr + " 连接失败！！！"
 				}
