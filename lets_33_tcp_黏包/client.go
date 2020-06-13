@@ -19,7 +19,7 @@ func main() {
 	}
 	var buffs [1024]byte
 
-	for dial != nil {
+	for  {
 		dial.Write([]byte("Hello !!" + time.Now().Format("2006-01-02 15:04:05.0000") + "\n"))
 		read, err := dial.Read(buffs[:])
 		fmt.Println(string(buffs[:read]))
@@ -27,7 +27,7 @@ func main() {
 			fmt.Println("服务器已经关闭你的连接！！")
 			break
 		}
-		continue //停止当前的代码 去执行下一次的
+		continue //停止当前的代码 去执行下一次的 2次  1—>fmt -> nil -> nil -> EOF -> for -> continue
 		time.Sleep(time.Second * 2)
 	}
 

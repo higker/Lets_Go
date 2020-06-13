@@ -15,7 +15,7 @@ func main() {
 	fmt.Println("ss len=", len(ss), "cap", cap(ss))
 	ss = append(ss[:3], ss[4:]...)
 	fmt.Println("ss=", ss)
-	//cap=8 是应为切片存储数据是底层数组存储的 所以移除了一个元素 只是底层数组的对应值被后面一个元素覆盖了 len是不变的
+	//cap=8 是应为切片存储数据是底层数组存储的 所以移除了一个元素 只是底层数组的对应值被后面一个元素覆盖了 底层数组的len是不变的
 	fmt.Println("ss len=", len(ss), "cap", cap(ss))
 	var arr = [5]int{1, 2, 3, 4, 5}
 	fmt.Println("arr = ", arr)
