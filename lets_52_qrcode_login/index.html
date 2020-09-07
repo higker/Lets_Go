@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Qrcode Login</title>
+
+</head>
+<body>
+<div class="container" style="text-align: center">
+    <h1>扫描二维码登录</h1>
+   <img src="/qrcode?token={{.}}">
+</div>
+
+<script type="text/javascript">
+    var token = {{.}}
+
+    var sock = null;
+
+    var wsuri = "ws://localhost:8080/ws/check_login?token="+token;
+
+    window.onload = function() {
+
+        console.log("onload");
+
+        sock = new WebSocket(wsuri);
+
+        sock.onopen = function() {
+
+            console.log("connected to " + wsuri);
+
+        }
+
+        sock.onclose = function(e) {
+
+            console.log("connection closed (" + e.code + ")");
+
+        }
+
+        sock.onmessage = function(e) {
+           if (e.data == "succeed"){
+               alert("登录成功！！！扫描登录成功！！")
+               sock.close();
+               window.location.replace("http://www.ibyte.me");
+           }
+        }
+    };
+
+
+</script>
+
+</body>
+</html>
